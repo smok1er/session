@@ -14,20 +14,20 @@ app = Client(
     api_hash=env.API_HASH,
     bot_token=env.BOT_TOKEN,
     in_memory=True,
-    plugins=dict(root="StringSessionBot"),
+    plugins=dict(root="BJ_Jbot"),
 )
 
 
 if __name__ == "__main__":
-    print("Starting the bot")
+    print("ابداء تشغيل البوت")
     try:
         app.start()
     except (ApiIdInvalid, ApiIdPublishedFlood):
-        raise Exception("Your API_ID/API_HASH is not valid.")
+        raise Exception("ايبي هاش وال ايدي غير صحيحاين.")
     except AccessTokenInvalid:
-        raise Exception("Your BOT_TOKEN is not valid.")
+        raise Exception("توكن بوت غير صحيح.")
     uname = app.get_me().username
-    print(f"@{uname} is now running!")
+    print(f"@{uname} يعمل الان!")
     idle()
     app.stop()
-    print("Bot stopped. Alvida!")
+    print("توقف البوت!")
