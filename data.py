@@ -2,52 +2,52 @@ from pyrogram.types import InlineKeyboardButton
 
 
 class Data:
-    generate_single_button = [InlineKeyboardButton("⚙ Start Generating Session ⚙", callback_data="generate")]
+    generate_single_button = [InlineKeyboardButton("⚙ ابدا استخراج الجلسة ⚙", callback_data="generate")]
 
     home_buttons = [
         generate_single_button,
-        [InlineKeyboardButton(text="🏠 Return Home 🏠", callback_data="home")]
+        [InlineKeyboardButton(text="🏠 العودة للبداية 🏠", callback_data="home")]
     ]
 
     generate_button = [generate_single_button]
 
     buttons = [
         generate_single_button,
-        [InlineKeyboardButton("👨‍💻 Owner 👨‍💻", url="https://t.me/SPA4KY")],
+        [InlineKeyboardButton("👨‍💻 المالك 👨‍💻", url="https://t.me/n_n_v")],
         [
-            InlineKeyboardButton("❔ How to Use ❔", callback_data="help"),
-            InlineKeyboardButton("ℹ About ℹ", callback_data="about")
+            InlineKeyboardButton("❔ كيفية الاستخدام ❔", callback_data="المساعدة"),
+            InlineKeyboardButton("ℹ نشط ℹ", callback_data="نشط")
         ],
     ]
 
     START = """
-Hey {}
+يمرحبا {}
 
-Welcome to {}
+مرحبا بك في {}
 
-Use This Bot only If You trust this bot, Else Delete this chat and don't use.
+استخدم هذا الروبوت فقط إذا كنت تثق في هذا الروبوت ، أو احذف هذه الدردشة ولا تستخدمه.
 
-I am Session String Generator bot for Pyrogram & Telethon.
-Click on Below buttons to know more.
+ أنا روبوت منشئ سلسلة الجلسة لـ Pyrogram & Telethon.
+ انقر فوق الأزرار أدناه لمعرفة المزيد.
     """
 
     HELP = """
-🔥 *Available Commands** 🔥
+🔥 **الأوامر المتاحة** 🔥
 
-`/about` - About this Bot.
-`/help` - Shows this message.
-`/start` - Starts the Bot.
-`/generate` - Generate Session.
-`/cancel` - Cancel the process.
-`/restart` - Restarts the process.
+`/about` - حول هذا البوت.
+`/help` - يعرض الك للمساعدة.
+`/start` - ابداء.
+`/generate` - انشاء جلسة.
+`/cancel` - قم بإلغاء العملية.
+`/restart` - اعد تشغيل من جديد.
 """
 
     ABOUT = """
-🔥 **About This Bot** 🔥
+🔥 **حول هذا البوت** 🔥
 
-**Telegram Bot to generate Pyrogram and Telethon string session.**
+**اللنشاء جلسة بايروكرام وجلسة تيرمكس.**
 
-**Framework** : [Pyrogram](https://docs.pyrogram.org)
+**Framework** : [بايروكرام](https://docs.pyrogram.org)
 
-**Language** : [Python](https://www.python.org)
+**Language** : [جيبثون](https://www.python.org)
     """
