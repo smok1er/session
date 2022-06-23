@@ -10,22 +10,22 @@ DATABASE_URL = os.getenv("DATABASE_URL", "").strip()
 MUST_JOIN = os.getenv("MUST_JOIN", "")
 
 if not API_ID:
-    print("No API_ID found. Exiting...")
+    print("لم يتم الثور على ايبي ايدي اخرج...")
     raise SystemExit
 if not API_HASH:
-    print("No API_HASH found. Exiting...")
+    print("لم يتم العثور على ايبي هاش اخرج...")
     raise SystemExit
 if not BOT_TOKEN:
-    print("No BOT_TOKEN found. Exiting...")
+    print("لم يتم العثور على بوت توكن اخرج...")
     raise SystemExit
 if not DATABASE_URL:
-    print("No DATABASE_URL found. Exiting...")
+    print("لم يتم العثور على قاعدة البينات...")
     raise SystemExit
 
 try:
     API_ID = int(API_ID)
 except ValueError:
-    print("API_ID is not a valid integer. Exiting...")
+    print("ايبي ايدي ليساَ صحيحاَ اخرج...")
     raise SystemExit
 
 if 'postgres' in DATABASE_URL and 'postgresql' not in DATABASE_URL:
